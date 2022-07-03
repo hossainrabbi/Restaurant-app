@@ -92,3 +92,16 @@ img {
 .activity__area article h6 {
   letter-spacing: 1px;
 }
+
+/* Title Area */
+.title__content {
+  width: 500px;
+}
+
+.cart__image {
+  height: 110px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
