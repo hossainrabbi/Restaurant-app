@@ -25,7 +25,19 @@ img {
 }
 
 .white__bg {
+  color: var(--dark-color);
   background-color: var(--white-color);
+}
+
+.white__bg .icon {
+  color: var(--white-color);
+  background-color: var(--dark-color);
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 11px;
 }
 
 /* Navbar Styles */

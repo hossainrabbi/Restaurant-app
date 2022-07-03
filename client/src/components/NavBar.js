@@ -6,7 +6,8 @@ import FOOD_LOGO from '../images/FOOD_LOGO.png';
 
 export default function NavBar() {
   const activeStyle = {
-    textDecoration: 'underline solid #484848 1px',
+    textDecoration: 'underline solid #e68a00 1px',
+    color: '#e68a00',
   };
 
   return (
