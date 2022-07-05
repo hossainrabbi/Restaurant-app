@@ -76,7 +76,7 @@ export const menuData = [
     description:
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
     price: 12,
-    review: 5,
+    ratting: 5,
     numOfReview: 3,
     image: MENU_1,
   },
@@ -87,7 +87,7 @@ export const menuData = [
     description:
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
     price: 15,
-    review: 3,
+    ratting: 3,
     numOfReview: 2,
     image: MENU_2,
   },
@@ -98,7 +98,7 @@ export const menuData = [
     description:
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
     price: 12,
-    review: 2,
+    ratting: 2,
     numOfReview: 3,
     image: MENU_3,
   },
@@ -109,7 +109,7 @@ export const menuData = [
     description:
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
     price: 12,
-    review: 5,
+    ratting: 5,
     numOfReview: 3,
     image: MENU_4,
   },
@@ -120,7 +120,7 @@ export const menuData = [
     description:
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
     price: 13,
-    review: 5,
+    ratting: 5,
     numOfReview: 1,
     image: MENU_5,
   },
@@ -131,7 +131,7 @@ export const menuData = [
     description:
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
     price: 12,
-    review: 4,
+    ratting: 4,
     numOfReview: 3,
     image: MENU_6,
   },

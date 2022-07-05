@@ -5,7 +5,14 @@
   --main-color: #e68a00;
   --white-color: #ffffff;
   --white-light: #fafafa;
-  --transition: 0.3;
+  --transition: 0.3s;
+  --radius-rounded-3: 0.3rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Custom Tag Styles */
@@ -104,4 +111,30 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+/* Menu Area */
+.menu__cart {
+  background-color: var(--white-color);
+}
+
+.menu__cart .cart__image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.menu__cart .cart__image img {
+  border-top-left-radius: var(--radius-rounded-3);
+  border-top-right-radius: var(--radius-rounded-3);
+  transition: all var(--transition);
+}
+
+.menu__cart .cart__image:hover img {
+  transform: scale(1.1);
+}
+
+.menu__cart .cart__btn {
+  border-top-left-radius: 50% !important;
+  border-bottom-right-radius: var(--radius-rounded-3) !important;
+  font-size: 20px;
 }
