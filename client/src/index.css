@@ -56,70 +56,9 @@ li {
   font-size: 11px;
 }
 
-/* Navbar Styles */
-.navbar__nav .navbar-brand {
-  height: 50px;
-}
-
-.navbar__nav .nav-link {
-  color: var(--dark-color) !important;
-  font-weight: 500;
-}
-
-.navbar__nav .cart__number {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  line-height: 18px;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 12px;
-  color: var(--white-color);
-  background-color: var(--gray-color);
-}
-
-/* Activity Area */
-.activity__area article {
-  background-color: var(--white-color);
-  text-align: center;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 30px;
-  transition: var(--transition);
-}
-
-.activity__area article:hover {
-  border-radius: 10px;
-}
-
-.activity__area article .icon {
-  font-size: 18px;
-  height: 35px;
-  width: 35px;
-  line-height: 30px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 50%;
-  color: var(--white-color);
-  background-color: var(--main-color);
-}
-
-.activity__area article h6 {
-  letter-spacing: 1px;
-}
-
 /* Title Area */
 .title__content {
   width: 500px;
-}
-
-.cart__image {
-  height: 110px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
 }
 
 /* Menu Area */
@@ -248,6 +187,7 @@ li {
 .subscribe__input input[type='email'] {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  color: var(--gray-color);
 }
 
 .subscribe__input input[type='button'] {

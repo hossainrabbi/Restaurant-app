@@ -1,0 +1,28 @@
+/* Navbar Styles */
+.navbar__logo {
+  height: 50px;
+}
+
+.navbar__nav a {
+  color: var(--dark-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cart__icon {
+  color: var(--dark-color);
+}
+
+.cart__number {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+  color: var(--white-color);
+  background-color: var(--gray-color);
+}

@@ -1,14 +1,14 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import { activityData } from '../../../data';
-import Cart from './Cart';
+import ActivityCart from './ActivityCart/ActivityCart';
 
-export default function Activity() {
+export default function Activity({ styles }) {
   return (
-    <Container className="activity__area py-5">
+    <Container className="py-5">
       <Row>
         {activityData.map((activity) => (
           <Col md={4} key={activity.name}>
-            <Cart {...activity} />
+            <ActivityCart styles={styles} {...activity} />
           </Col>
         ))}
       </Row>

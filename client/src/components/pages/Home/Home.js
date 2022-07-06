@@ -1,5 +1,5 @@
 import Footer from '../../Footer';
-import NavBar from '../../NavBar';
+import NavBar from '../../Navbar/NavBar';
 import About from './About';
 import Activity from './Activity';
 import Hero from './Hero';

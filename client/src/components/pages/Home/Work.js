@@ -1,7 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import { workData } from '../../../data';
 import Title from '../../Title';
-import Cart from './Cart';
+import ActivityCart from './ActivityCart/ActivityCart';
 
 export default function Work() {
   return (
@@ -14,7 +14,7 @@ export default function Work() {
       <Row>
         {workData.map((item) => (
           <Col md={4} key={item.name}>
-            <Cart {...item} />
+            <ActivityCart {...item} />
           </Col>
         ))}
       </Row>

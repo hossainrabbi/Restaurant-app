@@ -1,0 +1,35 @@
+.activity__cart {
+  background-color: var(--white-color);
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  transition: var(--transition);
+}
+
+.activity__cart:hover {
+  border-radius: 10px;
+}
+
+.cart__image {
+  height: 110px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.cart__icon {
+  font-size: 18px;
+  height: 35px;
+  width: 35px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+
+.activity__cart h6 {
+  letter-spacing: 1px;
+}
