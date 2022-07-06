@@ -1,3 +1,4 @@
+import Footer from '../../Footer';
 import NavBar from '../../NavBar';
 import About from './About';
 import Activity from './Activity';
@@ -16,6 +17,7 @@ export default function Home() {
       <Work />
       <Menu />
       <Testimonial />
+      <Footer />
     </section>
   );
 }
