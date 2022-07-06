@@ -3,6 +3,7 @@ import About from './About';
 import Activity from './Activity';
 import Hero from './Hero';
 import Menu from './Menu';
+import Testimonial from './Testimonial';
 import Work from './Work';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Work />
       <Menu />
+      <Testimonial />
     </section>
   );
 }

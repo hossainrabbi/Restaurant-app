@@ -29,11 +29,13 @@ img {
 .main__bg {
   color: var(--white-color) !important;
   background-color: var(--main-color);
+  box-shadow: none !important;
 }
 
 .white__bg {
   color: var(--dark-color);
   background-color: var(--white-color);
+  box-shadow: none !important;
 }
 
 .white__bg .icon {
@@ -137,4 +139,56 @@ img {
   border-top-left-radius: 50% !important;
   border-bottom-right-radius: var(--radius-rounded-3) !important;
   font-size: 20px;
+}
+
+/* Testimonial Area */
+.testimonial__area .testimonial__image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.testimonial__title h5 {
+  font-size: 18px;
+}
+
+.testimonial__title p small {
+  font-size: 13px;
+}
+
+.testimonial__content p {
+  color: var(--dark-color);
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-bottom: -16px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--main-color);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  top: 60%;
+  opacity: 0;
+  transition: all var(--transition);
+}
+
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important;
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-color);
 }

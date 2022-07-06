@@ -9,6 +9,9 @@ import MENU_4 from './images/menu/menu-4.jpg';
 import MENU_5 from './images/menu/menu-5.jpg';
 import MENU_6 from './images/menu/menu-6.jpg';
 import TAP from './images/tap.png';
+import ASHIQ from './images/testimonial/ashiq.jpg';
+import RAKIB from './images/testimonial/rakib.jpg';
+import ROHAN from './images/testimonial/rohan.jpg';
 
 export const navData = [
   {
@@ -134,5 +137,35 @@ export const menuData = [
     ratting: 4,
     numOfReview: 3,
     image: MENU_6,
+  },
+];
+
+export const testimonialData = [
+  {
+    id: 1,
+    name: 'Ashiq Hossain',
+    title: 'Java Developer',
+    review:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at repudiandae vitae suscipit! Perspiciatis totam enim provident ea quaerat consectetur.',
+    rating: 5,
+    image: ASHIQ,
+  },
+  {
+    id: 2,
+    name: 'Rohan Hossain',
+    title: 'Cyber Security Expart',
+    review:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at repudiandae vitae suscipit! Perspiciatis totam enim provident ea quaerat consectetur.',
+    rating: 3,
+    image: ROHAN,
+  },
+  {
+    id: 3,
+    name: 'Rakib Islam',
+    title: 'Web Developer',
+    review:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at repudiandae vitae suscipit! Perspiciatis totam enim provident ea quaerat consectetur.',
+    rating: 4,
+    image: RAKIB,
   },
 ];

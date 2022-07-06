@@ -1,7 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import { menuData } from '../../../data';
+import MenuCart from '../../MenuCart';
 import Title from '../../Title';
-import MenuCart from './MenuCart';
 
 export default function Menu() {
   return (
@@ -18,7 +18,9 @@ export default function Menu() {
         ))}
       </Row>
       <div className="d-flex justify-content-center mt-3">
-        <button className="btn main__bg">See More</button>
+        <button className="btn main__bg px-4 py-2 rounded-pill">
+          See More
+        </button>
       </div>
     </Container>
   );
