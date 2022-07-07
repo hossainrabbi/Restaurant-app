@@ -1,0 +1,24 @@
+.menu__cart {
+  background-color: var(--white-color);
+}
+
+.cart__image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.cart__image img {
+  border-top-left-radius: var(--radius-rounded-3);
+  border-top-right-radius: var(--radius-rounded-3);
+  transition: all var(--transition);
+}
+
+.cart__image:hover img {
+  transform: scale(1.1);
+}
+
+.cart__btn {
+  border-top-left-radius: 50% !important;
+  border-bottom-right-radius: var(--radius-rounded-3) !important;
+  font-size: 20px;
+}

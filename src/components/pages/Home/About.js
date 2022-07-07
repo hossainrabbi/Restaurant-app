@@ -1,10 +1,10 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { FaPlay } from 'react-icons/fa';
 import ABOUT_IMAGE from '../../../images/food-2.png';
 
 export default function About() {
   return (
-    <Container className="py-5 mt-4">
+    <section className="py-5 mt-4">
       <Row>
         <Col md={6}>
           <div>
@@ -37,6 +37,6 @@ export default function About() {
           </div>
         </Col>
       </Row>
-    </Container>
+    </section>
   );
 }

@@ -1,15 +1,16 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { navData } from '../data';
-import FOOD_LOGO from '../images/FOOD_LOGO.png';
+import { navData } from '../../data';
+import FOOD_LOGO from '../../images/FOOD_LOGO.png';
+import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
-    <footer className="footer__area pt-5 pb-3 mt-5">
+    <footer className={`${styles.footer__area} pt-5 pb-3 mt-5`}>
       <Container>
         <Row className="align-items-center">
           <Col md={3}>
-            <Link to="/" className="footer__logo">
+            <Link to="/" className={styles.footer__logo}>
               <img src={FOOD_LOGO} alt="FOOD_LOGO" />
             </Link>
             <p className="mt-2">
@@ -18,7 +19,7 @@ export default function Footer() {
             </p>
           </Col>
           <Col md={3}>
-            <h6 className="footer__title">Explore</h6>
+            <h6 className={styles.footer__title}>Explore</h6>
             {navData.map((item) => (
               <ul key={item.name}>
                 <li>
@@ -28,7 +29,7 @@ export default function Footer() {
             ))}
           </Col>
           <Col md={3}>
-            <h6 className="footer__title">Help</h6>
+            <h6 className={styles.footer__title}>Help</h6>
             {navData.map((item) => (
               <ul key={item.name}>
                 <li>
@@ -38,9 +39,9 @@ export default function Footer() {
             ))}
           </Col>
           <Col md={3}>
-            <h6 className="footer__title">Get in touch</h6>
+            <h6 className={styles.footer__title}>Get in touch</h6>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <div className="subscribe__input mt-3">
+            <div className={`${styles.subscribe__input} mt-3`}>
               <input type="email" />
               <input className="main__bg btn" type="button" value="Subscribe" />
             </div>

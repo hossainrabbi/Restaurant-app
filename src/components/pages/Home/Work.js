@@ -1,11 +1,11 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { workData } from '../../../data';
-import Title from '../../Title';
 import ActivityCart from './ActivityCart/ActivityCart';
+import Title from './Title/Title';
 
 export default function Work() {
   return (
-    <Container className="py-5">
+    <section className="py-5">
       <Title
         title="How It Work"
         description="It's through mistakes that you actually can grow you get rid of
@@ -18,6 +18,6 @@ export default function Work() {
           </Col>
         ))}
       </Row>
-    </Container>
+    </section>
   );
 }

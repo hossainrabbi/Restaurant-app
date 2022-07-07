@@ -1,4 +1,5 @@
 import { FaPlus } from 'react-icons/fa';
+import styles from './MenuCart.module.css';
 
 export default function MenuCart({
   name,
@@ -10,11 +11,11 @@ export default function MenuCart({
   image,
 }) {
   return (
-    <article className="menu__cart shadow-sm rounded-3 mb-4">
-      <div className="cart__image mb-0">
+    <article className={`${styles.menu__cart} shadow-sm rounded-3 mb-4`}>
+      <div className={`${styles.cart__image} mb-0`}>
         <img className="w-100" src={image} alt={name} />
       </div>
-      <div className="cart__content">
+      <div className={styles.cart__content}>
         <div className="p-3">
           <h4 className="d-flex justify-content-between align-items-center mb-0">
             <span>{name}</span>
@@ -34,7 +35,9 @@ export default function MenuCart({
             <span>ratting - {ratting}</span>
             <span>({numOfReview})</span>
           </div>
-          <button className="cart__btn main__bg rounded-0 py-2 px-3 btn">
+          <button
+            className={`${styles.cart__btn} main__bg btn rounded-0 py-2 px-3`}
+          >
             <FaPlus />
           </button>
         </div>

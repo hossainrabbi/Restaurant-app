@@ -56,56 +56,7 @@ li {
   font-size: 11px;
 }
 
-/* Title Area */
-.title__content {
-  width: 500px;
-}
-
-/* Menu Area */
-.menu__cart {
-  background-color: var(--white-color);
-}
-
-.menu__cart .cart__image {
-  height: 220px;
-  overflow: hidden;
-}
-
-.menu__cart .cart__image img {
-  border-top-left-radius: var(--radius-rounded-3);
-  border-top-right-radius: var(--radius-rounded-3);
-  transition: all var(--transition);
-}
-
-.menu__cart .cart__image:hover img {
-  transform: scale(1.1);
-}
-
-.menu__cart .cart__btn {
-  border-top-left-radius: 50% !important;
-  border-bottom-right-radius: var(--radius-rounded-3) !important;
-  font-size: 20px;
-}
-
-/* Testimonial Area */
-.testimonial__area .testimonial__image img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
-
-.testimonial__title h5 {
-  font-size: 18px;
-}
-
-.testimonial__title p small {
-  font-size: 13px;
-}
-
-.testimonial__content p {
-  color: var(--dark-color);
-}
-
+/* Testimonial Area Change default css in SwiperJS */
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   margin-bottom: -16px !important;
 }
@@ -137,60 +88,4 @@ li {
 
 .swiper-pagination-bullet-active {
   background-color: var(--main-color);
-}
-
-/* footer__area */
-.footer__area {
-  background-color: var(--gray-color);
-}
-
-.footer__area .footer__logo img {
-  height: 50px;
-}
-
-.footer__area p {
-  color: var(--white-color);
-  margin-bottom: 0;
-}
-
-.footer__area a {
-  color: var(--white-color);
-}
-
-.footer__title {
-  font-size: 20px;
-  color: var(--white-color);
-  position: relative;
-}
-
-.footer__title::after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background-color: var(--white-light);
-  left: 0;
-  bottom: -2px;
-}
-
-.subscribe__input {
-  display: flex;
-}
-
-.subscribe__input input {
-  padding: 5px 10px;
-  outline: 0 !important;
-  border-radius: var(--radius-rounded-3);
-  border: none;
-}
-
-.subscribe__input input[type='email'] {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  color: var(--gray-color);
-}
-
-.subscribe__input input[type='button'] {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }

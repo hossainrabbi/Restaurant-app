@@ -1,9 +1,9 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import FOOD_HERO from '../../../images/food-1.png';
 
 export default function Hero() {
   return (
-    <Container className="mt-4">
+    <section className="mt-4">
       <Row className="align-items-center">
         <Col md={6}>
           <h1>Your Favorite Food Delivered Hot &amp; Fresh</h1>
@@ -21,6 +21,6 @@ export default function Hero() {
           </div>
         </Col>
       </Row>
-    </Container>
+    </section>
   );
 }

@@ -1,11 +1,11 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { menuData } from '../../../data';
-import MenuCart from '../../MenuCart';
-import Title from '../../Title';
+import MenuCart from '../../MenuCart/MenuCart';
+import Title from './Title/Title';
 
 export default function Menu() {
   return (
-    <Container className="py-5">
+    <section className="py-5">
       <Title
         title="Explore Our Best Menu"
         description="It's through mistakes that you actually can grow you get rid of essential to makihave to get bad."
@@ -22,6 +22,6 @@ export default function Menu() {
           See More
         </button>
       </div>
-    </Container>
+    </section>
   );
 }
