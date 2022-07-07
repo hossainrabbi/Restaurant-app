@@ -1,4 +1,5 @@
 import { FaMinus, FaPlus } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 import styles from './MenuCart.module.css';
 
 export default function MenuCart({
@@ -14,13 +15,24 @@ export default function MenuCart({
   handleAddToCart,
   handleRemoveToCart,
 }) {
+  const navigate = useNavigate();
+  const handleNavigateMenuDetailsPage = () => {
+    navigate(`/menu/${id}`);
+  };
+
   return (
     <article className={`${styles.menu__cart} shadow-sm rounded-3 mb-4`}>
-      <div className={`${styles.cart__image} mb-0`}>
+      <div
+        className={`${styles.cart__image} mb-0 cursor__pointer`}
+        onClick={handleNavigateMenuDetailsPage}
+      >
         <img className="w-100" src={image} alt={name} />
       </div>
       <div className={styles.cart__content}>
-        <div className="p-3">
+        <div
+          className="p-3 cursor__pointer"
+          onClick={handleNavigateMenuDetailsPage}
+        >
           <h4 className="d-flex justify-content-between align-items-center mb-0">
             <span>{name}</span>
             <span>${price}</span>
@@ -35,7 +47,8 @@ export default function MenuCart({
           </p>
         </div>
         <div className="d-flex justify-content-between align-items-center ps-3">
-          <div>
+          <div
+          >
             <span>ratting - {ratting}</span>
             <span>({numOfReview})</span>
           </div>
