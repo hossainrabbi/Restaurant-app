@@ -1,9 +1,26 @@
 import { Col, Row } from 'react-bootstrap';
+import { useMenuContext } from '../../../contexts/MenuContext';
 import { menuData } from '../../../data';
 import MenuCart from '../../MenuCart/MenuCart';
 import Title from './Title/Title';
 
 export default function Menu() {
+  const { menuState, menuDispatch } = useMenuContext();
+
+  const handleAddToCart = (id) => {
+    menuDispatch({
+      type: 'ADD_TO_CART',
+      payload: menuData.find((item) => item.id === id),
+    });
+  };
+
+  const handleRemoveToCart = (id) => {
+    menuDispatch({
+      type: 'REMOVE_FROM_CART',
+      payload: id,
+    });
+  };
+
   return (
     <section className="py-5">
       <Title
@@ -13,7 +30,12 @@ export default function Menu() {
       <Row className="mt-4">
         {menuData.map((item) => (
           <Col md={4} key={item.id}>
-            <MenuCart {...item} />
+            <MenuCart
+              handleAddToCart={handleAddToCart}
+              handleRemoveToCart={handleRemoveToCart}
+              cart={menuState.cart}
+              {...item}
+            />
           </Col>
         ))}
       </Row>

@@ -1,11 +1,16 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Link, NavLink } from 'react-router-dom';
+import { useMenuContext } from '../../contexts/MenuContext';
 import { navData } from '../../data';
 import FOOD_LOGO from '../../images/FOOD_LOGO.png';
 import styles from './Navbar.module.css';
 
 export default function NavBar() {
+  const {
+    menuState: { cart },
+  } = useMenuContext();
+
   const activeStyle = {
     textDecoration: 'underline solid #e68a00 1px',
     color: '#e68a00',
@@ -34,7 +39,7 @@ export default function NavBar() {
           <div>
             <span className={`${styles.cart__icon} btn position-relative`}>
               <AiOutlineShoppingCart />
-              <span className={styles.cart__number}>5</span>
+              <span className={styles.cart__number}>{cart.length}</span>
             </span>
             <button className="btn main__bg ms-2">Login</button>
             <button className="btn main__bg ms-2">Signup</button>

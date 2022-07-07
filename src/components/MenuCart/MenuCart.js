@@ -1,7 +1,8 @@
-import { FaPlus } from 'react-icons/fa';
+import { FaMinus, FaPlus } from 'react-icons/fa';
 import styles from './MenuCart.module.css';
 
 export default function MenuCart({
+  id,
   name,
   title,
   description,
@@ -9,6 +10,9 @@ export default function MenuCart({
   ratting,
   numOfReview,
   image,
+  cart,
+  handleAddToCart,
+  handleRemoveToCart,
 }) {
   return (
     <article className={`${styles.menu__cart} shadow-sm rounded-3 mb-4`}>
@@ -35,11 +39,21 @@ export default function MenuCart({
             <span>ratting - {ratting}</span>
             <span>({numOfReview})</span>
           </div>
-          <button
-            className={`${styles.cart__btn} main__bg btn rounded-0 py-2 px-3`}
-          >
-            <FaPlus />
-          </button>
+          {cart.some((item) => item.id === id) ? (
+            <button
+              className={`${styles.cart__btn} main__bg btn rounded-0 py-2 px-3`}
+              onClick={() => handleRemoveToCart(id)}
+            >
+              <FaMinus />
+            </button>
+          ) : (
+            <button
+              className={`${styles.cart__btn} main__bg btn rounded-0 py-2 px-3`}
+              onClick={() => handleAddToCart(id)}
+            >
+              <FaPlus />
+            </button>
+          )}
         </div>
       </div>
     </article>
