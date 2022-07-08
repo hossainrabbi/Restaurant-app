@@ -73,7 +73,7 @@ export const workData = [
 
 export const menuData = [
   {
-    id: 1,
+    id: '1',
     name: 'Rose Muffen',
     title: 'Served with french fries + drink',
     description:
@@ -81,10 +81,11 @@ export const menuData = [
     price: 12,
     ratting: 5,
     numOfReview: 3,
+    inStock: 5,
     image: MENU_1,
   },
   {
-    id: 2,
+    id: '2',
     name: 'Pan Cake',
     title: 'Served with french fries + drink',
     description:
@@ -92,10 +93,11 @@ export const menuData = [
     price: 15,
     ratting: 3,
     numOfReview: 2,
+    inStock: 1,
     image: MENU_2,
   },
   {
-    id: 3,
+    id: '3',
     name: 'Egg Muffen',
     title: 'Served with french fries + drink',
     description:
@@ -103,10 +105,11 @@ export const menuData = [
     price: 12,
     ratting: 2,
     numOfReview: 3,
+    inStock: 9,
     image: MENU_3,
   },
   {
-    id: 4,
+    id: ' 4',
     name: 'Salads',
     title: 'Served with french fries + drink',
     description:
@@ -114,10 +117,11 @@ export const menuData = [
     price: 12,
     ratting: 5,
     numOfReview: 3,
+    inStock: 2,
     image: MENU_4,
   },
   {
-    id: 5,
+    id: '5',
     name: 'Egg Masala',
     title: 'Served with french fries + drink',
     description:
@@ -125,10 +129,11 @@ export const menuData = [
     price: 13,
     ratting: 5,
     numOfReview: 1,
+    inStock: 0,
     image: MENU_5,
   },
   {
-    id: 6,
+    id: '6',
     name: 'Vegie Muffen',
     title: 'Served with french fries + drink',
     description:
@@ -136,6 +141,7 @@ export const menuData = [
     price: 12,
     ratting: 4,
     numOfReview: 3,
+    inStock: 5,
     image: MENU_6,
   },
 ];

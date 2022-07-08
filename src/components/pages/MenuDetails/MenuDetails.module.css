@@ -1,0 +1,20 @@
+.menu__image img {
+  height: 350px;
+  width: 100%;
+}
+
+.menu__content h5 {
+  font-size: 30px;
+}
+
+.price {
+  color: var(--main-color);
+}
+
+.stock__green {
+  color: var(--green-color);
+}
+
+.stock__red {
+  color: var(--red-color);
+}
