@@ -2,6 +2,7 @@
 :root {
   --dark-color: #484848;
   --gray-color: #717171;
+  --light-gray: #dddddd;
   --main-color: #e68a00;
   --white-color: #ffffff;
   --white-light: #fafafa;
@@ -56,6 +57,14 @@ li {
   text-align: center;
   border-radius: 50%;
   font-size: 11px;
+}
+
+.main__color {
+  color: var(--main-color);
+}
+
+.gray__color {
+  color: var(--light-gray);
 }
 
 .cursor__pointer {

@@ -1,6 +1,8 @@
-import { FaMinus, FaPlus } from 'react-icons/fa';
+import { FaMinus, FaPlus, FaStar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import styles from './MenuCart.module.css';
+import Rating from 'react-rating';
+import { productReviewData } from '../../data';
 
 export default function MenuCart({
   id,
@@ -8,7 +10,6 @@ export default function MenuCart({
   title,
   description,
   price,
-  ratting,
   numOfReview,
   image,
   cart,
@@ -20,6 +21,12 @@ export default function MenuCart({
   const handleNavigateMenuDetailsPage = () => {
     navigate(`/menu/${id}`);
   };
+
+  const reviews = productReviewData.filter((item) => item.menuId === id);
+  let ratting = 0;
+  for (let i = 0; i < reviews.length; i++) {
+    ratting += reviews[i].ratting;
+  }
 
   return (
     <article className={`${styles.menu__cart} shadow-sm rounded-3 mb-4`}>
@@ -48,9 +55,16 @@ export default function MenuCart({
           </p>
         </div>
         <div className="d-flex justify-content-between align-items-center ps-3">
-          <div>
-            <span>ratting - {ratting}</span>
-            <span>({numOfReview})</span>
+          <div className="d-flex justify-content-between align-items-center">
+            <span>
+              <Rating
+                initialRating={Math.round(ratting / reviews.length) || 0}
+                readonly={true}
+                fullSymbol={<FaStar className="main__color" />}
+                emptySymbol={<FaStar className="gray__color" />}
+              />
+            </span>
+            <span className="mt-1 ms-2">({reviews.length})</span>
           </div>
           {cart.some((item) => item.id === id) ? (
             <button

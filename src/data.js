@@ -104,8 +104,6 @@ export const menuData = [
         exercitationem magni earum atque nesciunt?`,
     ],
     price: 12,
-    ratting: 5,
-    numOfReview: 3,
     inStock: 5,
     image: MENU_1,
   },
@@ -141,8 +139,6 @@ export const menuData = [
         exercitationem magni earum atque nesciunt?`,
     ],
     price: 15,
-    ratting: 3,
-    numOfReview: 2,
     inStock: 1,
     image: MENU_2,
   },
@@ -178,8 +174,6 @@ export const menuData = [
         exercitationem magni earum atque nesciunt?`,
     ],
     price: 12,
-    ratting: 2,
-    numOfReview: 3,
     inStock: 9,
     image: MENU_3,
   },
@@ -216,8 +210,6 @@ export const menuData = [
     ],
     price: 12,
     ratting: 5,
-    numOfReview: 3,
-    inStock: 2,
     image: MENU_4,
   },
   {
@@ -252,8 +244,6 @@ export const menuData = [
         exercitationem magni earum atque nesciunt?`,
     ],
     price: 13,
-    ratting: 5,
-    numOfReview: 1,
     inStock: 0,
     image: MENU_5,
   },
@@ -289,10 +279,36 @@ export const menuData = [
         exercitationem magni earum atque nesciunt?`,
     ],
     price: 12,
-    ratting: 4,
-    numOfReview: 3,
     inStock: 5,
     image: MENU_6,
+  },
+];
+
+export const productReviewData = [
+  {
+    id: '1',
+    userId: '1',
+    menuId: '1',
+    ratting: 3,
+    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+  },
+  {
+    id: '2',
+    userId: '2',
+    menuId: '1',
+    ratting: 5,
+    review: `Perspiciatis
+    at autem, est ratione soluta, minus nobis, qui fugit rerum doloremque
+    cum odio obcaecati fuga`,
+  },
+  {
+    id: '3',
+    userId: '3',
+    menuId: '2',
+    ratting: 2,
+    review: `Totam voluptate
+    quasi eligendi vel rerum quas voluptatibus placeat eaque, nesciunt
+    ullam beatae repellendus eius`,
   },
 ];
 
