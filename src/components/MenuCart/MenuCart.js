@@ -12,6 +12,7 @@ export default function MenuCart({
   numOfReview,
   image,
   cart,
+  inStock,
   handleAddToCart,
   handleRemoveToCart,
 }) {
@@ -62,6 +63,7 @@ export default function MenuCart({
             <button
               className={`${styles.cart__btn} main__bg btn rounded-0 py-2 px-3`}
               onClick={() => handleAddToCart(id)}
+              disabled={inStock <= 0}
             >
               <FaPlus />
             </button>

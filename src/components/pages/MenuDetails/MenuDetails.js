@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { useMenuContext } from '../../../contexts/MenuContext';
@@ -9,11 +10,15 @@ export default function MenuDetails() {
   const { id } = useParams();
   const { menuState, menuDispatch } = useMenuContext();
   const findMenu = menuData.find((item) => item.id === id);
+  const menuCartInclude = menuState?.cart?.find((item) => item.id === id);
+  const [qty, setQty] = useState(
+    menuCartInclude?.qty ? menuCartInclude?.qty : findMenu.inStock > 0 ? 1 : 0
+  );
 
   const handleMenuAddToCart = (addId) => {
     menuDispatch({
       type: 'ADD_TO_CART',
-      payload: menuData.find((item) => item.id === addId),
+      payload: { ...menuData.find((item) => item.id === addId), qty },
     });
   };
 
@@ -21,6 +26,20 @@ export default function MenuDetails() {
     menuDispatch({
       type: 'REMOVE_FROM_CART',
       payload: remId,
+    });
+  };
+
+  const handleQtyIncrement = () => {
+    setQty((prevQty) => {
+      if (prevQty < findMenu.inStock) return prevQty + 1;
+      return prevQty;
+    });
+  };
+
+  const handleQtyDecrement = () => {
+    setQty((prevQty) => {
+      if (prevQty > 0) return prevQty - 1;
+      return prevQty;
     });
   };
 
@@ -47,21 +66,35 @@ export default function MenuDetails() {
               <h4 className={styles.price}>
                 Price: <span>${findMenu.price}</span>
               </h4>
-              {findMenu.inStock ? (
+              {findMenu.inStock - qty > 0 ? (
                 <span className={styles.stock__green}>
-                  In Stock: {findMenu.inStock}
+                  In Stock: {findMenu.inStock - qty}
                 </span>
               ) : (
                 <span className={styles.stock__red}>
-                  In Stock: {findMenu.inStock}
+                  In Stock: {findMenu.inStock - qty}
                 </span>
               )}
             </div>
-            <div className="mb-4">
-              <button className="btn main__bg">-</button>
-              <span className="btn">5</span>
-              <button className="btn main__bg">+</button>
-            </div>
+            {menuState.cart.some((item) => item.id === id) || (
+              <div className="mb-4">
+                <button
+                  className="btn main__bg"
+                  onClick={handleQtyDecrement}
+                  disabled={qty <= 0}
+                >
+                  -
+                </button>
+                <span className="btn">{qty}</span>
+                <button
+                  className="btn main__bg"
+                  onClick={handleQtyIncrement}
+                  disabled={findMenu.inStock - qty <= 0}
+                >
+                  +
+                </button>
+              </div>
+            )}
             {menuState.cart.some((item) => item.id === id) ? (
               <button
                 className="btn main__bg mb-3"
@@ -73,6 +106,7 @@ export default function MenuDetails() {
               <button
                 className="btn main__bg mb-3"
                 onClick={() => handleMenuAddToCart(id)}
+                disabled={findMenu.inStock - qty < 0 || qty <= 0}
               >
                 Add to Cart
               </button>

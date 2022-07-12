@@ -10,7 +10,7 @@ export default function Menu() {
   const handleAddToCart = (id) => {
     menuDispatch({
       type: 'ADD_TO_CART',
-      payload: menuData.find((item) => item.id === id),
+      payload: { ...menuData.find((item) => item.id === id), qty: 1 },
     });
   };
 
