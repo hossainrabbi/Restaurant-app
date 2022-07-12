@@ -76,8 +76,33 @@ export const menuData = [
     id: '1',
     name: 'Rose Muffen',
     title: 'Served with french fries + drink',
-    description:
+    description: [
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        ipsa sunt incidunt culpa atque reiciendis a nihil explicabo deserunt
+        assumenda, quam non distinctio harum temporibus, dolor quo beatae!
+        Corporis culpa, quo assumenda voluptate exercitationem, nihil quaerat
+        tempore minus dolores tempora magnam, soluta minima ex similique
+        deserunt nobis excepturi odio obcaecati recusandae delectus blanditiis
+        cum veritatis sapiente perferendis. Accusantium, vitae delectus. Culpa
+        enim, molestiae eveniet tenetur minus reprehenderit, molestias
+        adipisci ex ab amet iste nobis cum fugit ipsam! Tenetur, pariatur
+        numquam eveniet repellendus recusandae beatae quis, dolore qui saepe
+        doloremque quia incidunt, dolores at ipsa itaque tempore minus
+        asperiores vitae ea.`,
+      `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+        laborum, ipsam asperiores maiores, fugiat beatae, hic fuga quas id
+        enim architecto! Voluptatibus cum, odio nihil perspiciatis cumque
+        sapiente quis impedit.`,
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        at autem, est ratione soluta, minus nobis, qui fugit rerum doloremque
+        cum odio obcaecati fuga! Atque dignissimos, fugiat alias libero
+        deserunt dolorem quidem, eveniet tenetur sunt adipisci id doloremque
+        dolor dolore eum esse suscipit magnam repellendus! Totam voluptate
+        quasi eligendi vel rerum quas voluptatibus placeat eaque, nesciunt
+        ullam beatae repellendus eius! Culpa harum sed impedit. Debitis
+        exercitationem magni earum atque nesciunt?`,
+    ],
     price: 12,
     ratting: 5,
     numOfReview: 3,
@@ -88,8 +113,33 @@ export const menuData = [
     id: '2',
     name: 'Pan Cake',
     title: 'Served with french fries + drink',
-    description:
+    description: [
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        ipsa sunt incidunt culpa atque reiciendis a nihil explicabo deserunt
+        assumenda, quam non distinctio harum temporibus, dolor quo beatae!
+        Corporis culpa, quo assumenda voluptate exercitationem, nihil quaerat
+        tempore minus dolores tempora magnam, soluta minima ex similique
+        deserunt nobis excepturi odio obcaecati recusandae delectus blanditiis
+        cum veritatis sapiente perferendis. Accusantium, vitae delectus. Culpa
+        enim, molestiae eveniet tenetur minus reprehenderit, molestias
+        adipisci ex ab amet iste nobis cum fugit ipsam! Tenetur, pariatur
+        numquam eveniet repellendus recusandae beatae quis, dolore qui saepe
+        doloremque quia incidunt, dolores at ipsa itaque tempore minus
+        asperiores vitae ea.`,
+      `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+        laborum, ipsam asperiores maiores, fugiat beatae, hic fuga quas id
+        enim architecto! Voluptatibus cum, odio nihil perspiciatis cumque
+        sapiente quis impedit.`,
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        at autem, est ratione soluta, minus nobis, qui fugit rerum doloremque
+        cum odio obcaecati fuga! Atque dignissimos, fugiat alias libero
+        deserunt dolorem quidem, eveniet tenetur sunt adipisci id doloremque
+        dolor dolore eum esse suscipit magnam repellendus! Totam voluptate
+        quasi eligendi vel rerum quas voluptatibus placeat eaque, nesciunt
+        ullam beatae repellendus eius! Culpa harum sed impedit. Debitis
+        exercitationem magni earum atque nesciunt?`,
+    ],
     price: 15,
     ratting: 3,
     numOfReview: 2,
@@ -100,8 +150,33 @@ export const menuData = [
     id: '3',
     name: 'Egg Muffen',
     title: 'Served with french fries + drink',
-    description:
+    description: [
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        ipsa sunt incidunt culpa atque reiciendis a nihil explicabo deserunt
+        assumenda, quam non distinctio harum temporibus, dolor quo beatae!
+        Corporis culpa, quo assumenda voluptate exercitationem, nihil quaerat
+        tempore minus dolores tempora magnam, soluta minima ex similique
+        deserunt nobis excepturi odio obcaecati recusandae delectus blanditiis
+        cum veritatis sapiente perferendis. Accusantium, vitae delectus. Culpa
+        enim, molestiae eveniet tenetur minus reprehenderit, molestias
+        adipisci ex ab amet iste nobis cum fugit ipsam! Tenetur, pariatur
+        numquam eveniet repellendus recusandae beatae quis, dolore qui saepe
+        doloremque quia incidunt, dolores at ipsa itaque tempore minus
+        asperiores vitae ea.`,
+      `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+        laborum, ipsam asperiores maiores, fugiat beatae, hic fuga quas id
+        enim architecto! Voluptatibus cum, odio nihil perspiciatis cumque
+        sapiente quis impedit.`,
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        at autem, est ratione soluta, minus nobis, qui fugit rerum doloremque
+        cum odio obcaecati fuga! Atque dignissimos, fugiat alias libero
+        deserunt dolorem quidem, eveniet tenetur sunt adipisci id doloremque
+        dolor dolore eum esse suscipit magnam repellendus! Totam voluptate
+        quasi eligendi vel rerum quas voluptatibus placeat eaque, nesciunt
+        ullam beatae repellendus eius! Culpa harum sed impedit. Debitis
+        exercitationem magni earum atque nesciunt?`,
+    ],
     price: 12,
     ratting: 2,
     numOfReview: 3,
@@ -112,8 +187,33 @@ export const menuData = [
     id: ' 4',
     name: 'Salads',
     title: 'Served with french fries + drink',
-    description:
+    description: [
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        ipsa sunt incidunt culpa atque reiciendis a nihil explicabo deserunt
+        assumenda, quam non distinctio harum temporibus, dolor quo beatae!
+        Corporis culpa, quo assumenda voluptate exercitationem, nihil quaerat
+        tempore minus dolores tempora magnam, soluta minima ex similique
+        deserunt nobis excepturi odio obcaecati recusandae delectus blanditiis
+        cum veritatis sapiente perferendis. Accusantium, vitae delectus. Culpa
+        enim, molestiae eveniet tenetur minus reprehenderit, molestias
+        adipisci ex ab amet iste nobis cum fugit ipsam! Tenetur, pariatur
+        numquam eveniet repellendus recusandae beatae quis, dolore qui saepe
+        doloremque quia incidunt, dolores at ipsa itaque tempore minus
+        asperiores vitae ea.`,
+      `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+        laborum, ipsam asperiores maiores, fugiat beatae, hic fuga quas id
+        enim architecto! Voluptatibus cum, odio nihil perspiciatis cumque
+        sapiente quis impedit.`,
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        at autem, est ratione soluta, minus nobis, qui fugit rerum doloremque
+        cum odio obcaecati fuga! Atque dignissimos, fugiat alias libero
+        deserunt dolorem quidem, eveniet tenetur sunt adipisci id doloremque
+        dolor dolore eum esse suscipit magnam repellendus! Totam voluptate
+        quasi eligendi vel rerum quas voluptatibus placeat eaque, nesciunt
+        ullam beatae repellendus eius! Culpa harum sed impedit. Debitis
+        exercitationem magni earum atque nesciunt?`,
+    ],
     price: 12,
     ratting: 5,
     numOfReview: 3,
@@ -124,8 +224,33 @@ export const menuData = [
     id: '5',
     name: 'Egg Masala',
     title: 'Served with french fries + drink',
-    description:
+    description: [
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        ipsa sunt incidunt culpa atque reiciendis a nihil explicabo deserunt
+        assumenda, quam non distinctio harum temporibus, dolor quo beatae!
+        Corporis culpa, quo assumenda voluptate exercitationem, nihil quaerat
+        tempore minus dolores tempora magnam, soluta minima ex similique
+        deserunt nobis excepturi odio obcaecati recusandae delectus blanditiis
+        cum veritatis sapiente perferendis. Accusantium, vitae delectus. Culpa
+        enim, molestiae eveniet tenetur minus reprehenderit, molestias
+        adipisci ex ab amet iste nobis cum fugit ipsam! Tenetur, pariatur
+        numquam eveniet repellendus recusandae beatae quis, dolore qui saepe
+        doloremque quia incidunt, dolores at ipsa itaque tempore minus
+        asperiores vitae ea.`,
+      `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+        laborum, ipsam asperiores maiores, fugiat beatae, hic fuga quas id
+        enim architecto! Voluptatibus cum, odio nihil perspiciatis cumque
+        sapiente quis impedit.`,
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        at autem, est ratione soluta, minus nobis, qui fugit rerum doloremque
+        cum odio obcaecati fuga! Atque dignissimos, fugiat alias libero
+        deserunt dolorem quidem, eveniet tenetur sunt adipisci id doloremque
+        dolor dolore eum esse suscipit magnam repellendus! Totam voluptate
+        quasi eligendi vel rerum quas voluptatibus placeat eaque, nesciunt
+        ullam beatae repellendus eius! Culpa harum sed impedit. Debitis
+        exercitationem magni earum atque nesciunt?`,
+    ],
     price: 13,
     ratting: 5,
     numOfReview: 1,
@@ -136,8 +261,33 @@ export const menuData = [
     id: '6',
     name: 'Vegie Muffen',
     title: 'Served with french fries + drink',
-    description:
+    description: [
       'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatem.',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        ipsa sunt incidunt culpa atque reiciendis a nihil explicabo deserunt
+        assumenda, quam non distinctio harum temporibus, dolor quo beatae!
+        Corporis culpa, quo assumenda voluptate exercitationem, nihil quaerat
+        tempore minus dolores tempora magnam, soluta minima ex similique
+        deserunt nobis excepturi odio obcaecati recusandae delectus blanditiis
+        cum veritatis sapiente perferendis. Accusantium, vitae delectus. Culpa
+        enim, molestiae eveniet tenetur minus reprehenderit, molestias
+        adipisci ex ab amet iste nobis cum fugit ipsam! Tenetur, pariatur
+        numquam eveniet repellendus recusandae beatae quis, dolore qui saepe
+        doloremque quia incidunt, dolores at ipsa itaque tempore minus
+        asperiores vitae ea.`,
+      `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+        laborum, ipsam asperiores maiores, fugiat beatae, hic fuga quas id
+        enim architecto! Voluptatibus cum, odio nihil perspiciatis cumque
+        sapiente quis impedit.`,
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        at autem, est ratione soluta, minus nobis, qui fugit rerum doloremque
+        cum odio obcaecati fuga! Atque dignissimos, fugiat alias libero
+        deserunt dolorem quidem, eveniet tenetur sunt adipisci id doloremque
+        dolor dolore eum esse suscipit magnam repellendus! Totam voluptate
+        quasi eligendi vel rerum quas voluptatibus placeat eaque, nesciunt
+        ullam beatae repellendus eius! Culpa harum sed impedit. Debitis
+        exercitationem magni earum atque nesciunt?`,
+    ],
     price: 12,
     ratting: 4,
     numOfReview: 3,

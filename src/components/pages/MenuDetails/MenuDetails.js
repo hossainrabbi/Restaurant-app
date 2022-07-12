@@ -1,22 +1,36 @@
 import { Col, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import { useMenuContext } from '../../../contexts/MenuContext';
 import { menuData } from '../../../data';
 import Layout from '../../Layout';
 import styles from './MenuDetails.module.css';
 
 export default function MenuDetails() {
   const { id } = useParams();
+  const { menuState, menuDispatch } = useMenuContext();
   const findMenu = menuData.find((item) => item.id === id);
+
+  const handleMenuAddToCart = (addId) => {
+    menuDispatch({
+      type: 'ADD_TO_CART',
+      payload: menuData.find((item) => item.id === addId),
+    });
+  };
+
+  const handleMenuRemoveFromCart = (remId) => {
+    menuDispatch({
+      type: 'REMOVE_FROM_CART',
+      payload: remId,
+    });
+  };
 
   if (!findMenu) {
     return <div>not found</div>;
   }
 
-  console.log(findMenu);
-
   return (
     <Layout>
-      <Row className="align-items-center mt-4">
+      <Row className="align-items-center mt-3">
         <Col md={6}>
           <div className={styles.menu__image}>
             <img src={findMenu.image} alt={findMenu.name} />
@@ -48,42 +62,29 @@ export default function MenuDetails() {
               <span className="btn">5</span>
               <button className="btn main__bg">+</button>
             </div>
-            <button className="btn main__bg mb-3">Add to Cart</button>
-            <p className="mb-0">{findMenu.description}</p>
+            {menuState.cart.some((item) => item.id === id) ? (
+              <button
+                className="btn main__bg mb-3"
+                onClick={() => handleMenuRemoveFromCart(id)}
+              >
+                Remove from Cart
+              </button>
+            ) : (
+              <button
+                className="btn main__bg mb-3"
+                onClick={() => handleMenuAddToCart(id)}
+              >
+                Add to Cart
+              </button>
+            )}
+            <p className="mb-0">{findMenu.description[0]}</p>
           </article>
         </Col>
       </Row>
       <div className="mt-4">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          ipsa sunt incidunt culpa atque reiciendis a nihil explicabo deserunt
-          assumenda, quam non distinctio harum temporibus, dolor quo beatae!
-          Corporis culpa, quo assumenda voluptate exercitationem, nihil quaerat
-          tempore minus dolores tempora magnam, soluta minima ex similique
-          deserunt nobis excepturi odio obcaecati recusandae delectus blanditiis
-          cum veritatis sapiente perferendis. Accusantium, vitae delectus. Culpa
-          enim, molestiae eveniet tenetur minus reprehenderit, molestias
-          adipisci ex ab amet iste nobis cum fugit ipsam! Tenetur, pariatur
-          numquam eveniet repellendus recusandae beatae quis, dolore qui saepe
-          doloremque quia incidunt, dolores at ipsa itaque tempore minus
-          asperiores vitae ea.
-        </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
-          laborum, ipsam asperiores maiores, fugiat beatae, hic fuga quas id
-          enim architecto! Voluptatibus cum, odio nihil perspiciatis cumque
-          sapiente quis impedit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          at autem, est ratione soluta, minus nobis, qui fugit rerum doloremque
-          cum odio obcaecati fuga! Atque dignissimos, fugiat alias libero
-          deserunt dolorem quidem, eveniet tenetur sunt adipisci id doloremque
-          dolor dolore eum esse suscipit magnam repellendus! Totam voluptate
-          quasi eligendi vel rerum quas voluptatibus placeat eaque, nesciunt
-          ullam beatae repellendus eius! Culpa harum sed impedit. Debitis
-          exercitationem magni earum atque nesciunt?
-        </p>
+        {findMenu.description.slice(1).map((value, i) => (
+          <p key={i}>{value}</p>
+        ))}
       </div>
     </Layout>
   );

@@ -41,14 +41,13 @@ export default function MenuCart({
             <small>{title}</small>
           </p>
           <p className="mb-0">
-            {description.length > 120
-              ? `${description.slice(0, 120)}...`
-              : description}
+            {description[0]?.length > 120
+              ? `${description[0]?.slice(0, 120)}...`
+              : description[0]}
           </p>
         </div>
         <div className="d-flex justify-content-between align-items-center ps-3">
-          <div
-          >
+          <div>
             <span>ratting - {ratting}</span>
             <span>({numOfReview})</span>
           </div>
