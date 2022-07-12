@@ -1,0 +1,8 @@
+.user__image {
+  width: 60px;
+  height: 60px;
+}
+
+.user__image img {
+  border-radius: 50%;
+}

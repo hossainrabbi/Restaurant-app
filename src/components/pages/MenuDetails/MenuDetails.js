@@ -1,9 +1,13 @@
 import { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { FaStar } from 'react-icons/fa';
+import Rating from 'react-rating';
 import { useParams } from 'react-router-dom';
 import { useMenuContext } from '../../../contexts/MenuContext';
-import { menuData } from '../../../data';
+import { menuData, productReviewData, userData } from '../../../data';
 import Layout from '../../Layout';
+import ReviewDetails from '../../ReviewDetails/ReviewDetails';
+import Title from '../../Title/Title';
 import styles from './MenuDetails.module.css';
 
 export default function MenuDetails() {
@@ -43,6 +47,12 @@ export default function MenuDetails() {
     });
   };
 
+  const reviews = productReviewData.filter((item) => item.menuId === id);
+  let ratting = 0;
+  for (let i = 0; i < reviews.length; i++) {
+    ratting += reviews[i].ratting;
+  }
+
   if (!findMenu) {
     return <div>not found</div>;
   }
@@ -59,8 +69,21 @@ export default function MenuDetails() {
           <article className={styles.menu__content}>
             <h5>{findMenu.name}</h5>
             <div className="my-2">
-              <span>Rating-</span>
-              <span>{findMenu.ratting}</span>
+              <span>
+                <Rating
+                  initialRating={Math.round(ratting / reviews.length) || 0}
+                  readonly={true}
+                  fullSymbol={<FaStar className="main__color" />}
+                  emptySymbol={<FaStar className="gray__color" />}
+                />
+              </span>
+              {reviews.length > 0 ? (
+                <a href="#reviews" className="mt-1 ms-2 link__hover">
+                  (reviews: {reviews.length})
+                </a>
+              ) : (
+                <span className="mt-1 ms-2">(reviews: {reviews.length})</span>
+              )}
             </div>
             <div className="d-flex align-items-center gap-5 mb-2">
               <h4 className={styles.price}>
@@ -115,11 +138,31 @@ export default function MenuDetails() {
           </article>
         </Col>
       </Row>
-      <div className="mt-4">
+      <div className="mt-4 mb-5">
         {findMenu.description.slice(1).map((value, i) => (
           <p key={i}>{value}</p>
         ))}
       </div>
+      {reviews.length > 0 && (
+        <div id="reviews">
+          <Title
+            title="Customer Reviews"
+            description="It's through mistakes that you actually can grow you get rid of essential to makihave to get bad."
+          />
+          {reviews.map((reviewItem) =>
+            userData.map(
+              (userItem) =>
+                reviewItem.userId === userItem.id && (
+                  <ReviewDetails
+                    key={userItem.id}
+                    reviewItem={reviewItem}
+                    userItem={userItem}
+                  />
+                )
+            )
+          )}
+        </div>
+      )}
     </Layout>
   );
 }

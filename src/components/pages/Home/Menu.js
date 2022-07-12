@@ -2,7 +2,7 @@ import { Col, Row } from 'react-bootstrap';
 import { useMenuContext } from '../../../contexts/MenuContext';
 import { menuData } from '../../../data';
 import MenuCart from '../../MenuCart/MenuCart';
-import Title from './Title/Title';
+import Title from '../../Title/Title';
 
 export default function Menu() {
   const { menuState, menuDispatch } = useMenuContext();

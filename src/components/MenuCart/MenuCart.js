@@ -1,8 +1,8 @@
 import { FaMinus, FaPlus, FaStar } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
-import styles from './MenuCart.module.css';
 import Rating from 'react-rating';
+import { useNavigate } from 'react-router-dom';
 import { productReviewData } from '../../data';
+import styles from './MenuCart.module.css';
 
 export default function MenuCart({
   id,
@@ -10,7 +10,6 @@ export default function MenuCart({
   title,
   description,
   price,
-  numOfReview,
   image,
   cart,
   inStock,

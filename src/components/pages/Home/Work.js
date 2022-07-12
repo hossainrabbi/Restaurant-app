@@ -1,7 +1,7 @@
 import { Col, Row } from 'react-bootstrap';
 import { workData } from '../../../data';
+import Title from '../../Title/Title';
 import ActivityCart from './ActivityCart/ActivityCart';
-import Title from './Title/Title';
 
 export default function Work() {
   return (

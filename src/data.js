@@ -312,6 +312,27 @@ export const productReviewData = [
   },
 ];
 
+export const userData = [
+  {
+    id: '1',
+    name: 'Ashiq',
+    title: 'Java Developer',
+    image: ASHIQ,
+  },
+  {
+    id: '2',
+    name: 'Rakib',
+    title: 'Web Developer',
+    image: RAKIB,
+  },
+  {
+    id: '3',
+    name: 'Rohan Hossain',
+    title: 'Cyber Security Expart',
+    image: ROHAN,
+  },
+];
+
 export const testimonialData = [
   {
     id: 1,

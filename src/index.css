@@ -67,6 +67,14 @@ li {
   color: var(--light-gray);
 }
 
+.link__hover {
+  text-decoration: none;
+}
+
+.link__hover:hover {
+  text-decoration: underline;
+}
+
 .cursor__pointer {
   cursor: pointer;
 }

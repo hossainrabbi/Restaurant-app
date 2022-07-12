@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { testimonialData } from '../../../../data';
 import CHEF from '../../../../images/chef.jpg';
-import Title from '../Title/Title';
+import Title from '../../../Title/Title';
 import styles from './Testimonial.module.css';
 
 export default function Testimonial() {
