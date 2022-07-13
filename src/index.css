@@ -67,6 +67,11 @@ li {
   color: var(--light-gray);
 }
 
+.red__color {
+  color: var(--red-color) !important;
+  font-size: 14px;
+}
+
 .link__hover {
   text-decoration: none;
 }
@@ -77,6 +82,10 @@ li {
 
 .cursor__pointer {
   cursor: pointer;
+}
+
+.btn {
+  box-shadow: none !important;
 }
 
 /* Testimonial Area Change default css in SwiperJS */
@@ -111,4 +120,19 @@ li {
 
 .swiper-pagination-bullet-active {
   background-color: var(--main-color);
+}
+
+/* TEST */
+.dropdown-menu,
+.dropdown-menu.show {
+  width: 220px !important;
+  padding: 0;
+  margin: 0;
+  left: auto;
+  right: -75px;
+}
+
+.cart__dropdown__item img {
+  width: 40px;
+  height: 40px;
 }

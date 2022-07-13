@@ -1,5 +1,6 @@
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { FaTrash } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 import { useMenuContext } from '../../contexts/MenuContext';
 import { navData } from '../../data';
@@ -24,7 +25,7 @@ export default function NavBar() {
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className={`${styles.navbar__nav} ms-auto`}>
+          <Nav className={`${styles.navbar__nav} ms-auto align-items-center`}>
             {navData.map(({ name, url }) => (
               <NavLink
                 className="mx-2"
@@ -35,15 +36,48 @@ export default function NavBar() {
                 {name}
               </NavLink>
             ))}
-          </Nav>
-          <div>
-            <span className={`${styles.cart__icon} btn position-relative`}>
-              <AiOutlineShoppingCart />
-              <span className={styles.cart__number}>{cart.length}</span>
-            </span>
+            <NavDropdown
+              title={
+                <span className={`${styles.cart__icon} btn position-relative`}>
+                  <AiOutlineShoppingCart />
+                  <span className={styles.cart__number}>{cart.length}</span>
+                </span>
+              }
+              className={styles.nav__dropdown}
+              id="nav-dropdown"
+            >
+              {cart.length > 0 ? (
+                <>
+                  {cart.map((item) => (
+                    <div
+                      className="cart__dropdown__item d-flex justify-content-between align-items-center p-2 border-bottom"
+                      key={item.id}
+                    >
+                      <img src={item.image} alt={item.name} />
+                      <strong>${Math.round(item.price * item.qty)}</strong>
+                      <div className="d-flex align-items-center">
+                        <button className="btn main__bg px-2 py-0">-</button>
+                        <span className="btn px-1 py-0">{item.qty}</span>
+                        <button className="btn main__bg px-2 py-0">+</button>
+                      </div>
+                      <button className="btn red__color px-2 py-0">
+                        <FaTrash />
+                      </button>
+                    </div>
+                  ))}
+                  <Link
+                    to="/cart"
+                    className={`${styles.cart__link__hover} text-center p-2 d-block`}
+                  >
+                    <small>See More Cart Details</small>
+                  </Link>
+                </>
+              ) : (
+                <span className="text-center p-2 d-block">No Data Found</span>
+              )}
+            </NavDropdown>
             <button className="btn main__bg ms-2">Login</button>
-            <button className="btn main__bg ms-2">Signup</button>
-          </div>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

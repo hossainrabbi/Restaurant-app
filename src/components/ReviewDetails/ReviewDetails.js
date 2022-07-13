@@ -13,7 +13,9 @@ export default function ReviewDetails({ reviewItem, userItem }) {
         </div>
         <div>
           <h6 className="mb-0">{userItem.name}</h6>
-          <p className="mb-0">{userItem.title}</p>
+          <p className="mb-0">
+            <small>{userItem.title}</small>
+          </p>
         </div>
       </div>
       <div className="mt-2">
