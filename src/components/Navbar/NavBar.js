@@ -115,7 +115,6 @@ export default function NavBar() {
                 <span className="text-center p-2 d-block">No Data Found</span>
               )}
             </NavDropdown>
-            <button className="btn main__bg ms-2">Login</button>
           </Nav>
         </Navbar.Collapse>
       </Container>

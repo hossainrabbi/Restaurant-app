@@ -6,6 +6,7 @@ import Contact from './components/pages/Contact/Contact';
 import MenuDetails from './components/pages/MenuDetails/MenuDetails';
 import Package from './components/pages/Package/Package';
 import MenuContext from './contexts/MenuContext';
+import PageNotFound from './components/pages/PageNotFound/PageNotFound';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/menu/:id" element={<MenuDetails />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </MenuContext>
     </BrowserRouter>

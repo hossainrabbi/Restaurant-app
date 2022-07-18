@@ -1,0 +1,12 @@
+.page__not__found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page__not__found h2 {
+  text-align: center;
+  font-size: 50px;
+}

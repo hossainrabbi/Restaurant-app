@@ -19,7 +19,7 @@ export default function Testimonial() {
       />
       <Row className="align-items-center mt-3">
         <Col md={6}>
-          <div>
+          <div className="mb-4">
             <Swiper
               cssMode={true}
               navigation={true}
@@ -71,7 +71,7 @@ export default function Testimonial() {
           </div>
         </Col>
         <Col md={6}>
-          <div>
+          <div className="mb-4">
             <img className="rounded-3 shadow" src={CHEF} alt="CHEF_MAN" />
           </div>
         </Col>

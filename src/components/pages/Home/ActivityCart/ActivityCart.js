@@ -2,7 +2,7 @@ import styles from './ActivityCart.module.css';
 
 export default function Cart({ name, description, icon: Icon, image }) {
   return (
-    <article className={`${styles.activity__cart} shadow-sm p-4`}>
+    <article className={`${styles.activity__cart} shadow-sm p-4 mb-4`}>
       {image ? (
         <span className={styles.cart__image}>
           <img src={image} alt={name} />
