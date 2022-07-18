@@ -210,6 +210,7 @@ export const menuData = [
     ],
     price: 12,
     ratting: 5,
+    inStock: 2,
     image: MENU_4,
   },
   {
@@ -279,7 +280,7 @@ export const menuData = [
         exercitationem magni earum atque nesciunt?`,
     ],
     price: 12,
-    inStock: 5,
+    inStock: 11,
     image: MENU_6,
   },
 ];

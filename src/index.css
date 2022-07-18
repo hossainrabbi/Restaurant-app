@@ -88,6 +88,14 @@ li {
   box-shadow: none !important;
 }
 
+.stock__green {
+  color: var(--green-color);
+}
+
+.stock__red {
+  color: var(--red-color);
+}
+
 /* Testimonial Area Change default css in SwiperJS */
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   margin-bottom: -16px !important;

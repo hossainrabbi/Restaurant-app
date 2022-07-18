@@ -90,11 +90,11 @@ export default function MenuDetails() {
                 Price: <span>${findMenu.price}</span>
               </h4>
               {findMenu.inStock - qty > 0 ? (
-                <span className={styles.stock__green}>
+                <span className="stock__green">
                   In Stock: {findMenu.inStock - qty}
                 </span>
               ) : (
-                <span className={styles.stock__red}>
+                <span className="stock__red">
                   In Stock: {findMenu.inStock - qty}
                 </span>
               )}

@@ -10,11 +10,3 @@
 .price {
   color: var(--main-color);
 }
-
-.stock__green {
-  color: var(--green-color);
-}
-
-.stock__red {
-  color: var(--red-color);
-}
