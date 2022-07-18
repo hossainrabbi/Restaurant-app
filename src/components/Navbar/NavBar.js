@@ -75,7 +75,9 @@ export default function NavBar() {
                       className="cart__dropdown__item d-flex justify-content-between align-items-center p-2 border-bottom"
                       key={item.id}
                     >
-                      <img src={item.image} alt={item.name} />
+                      <Link to={`/menu/${item.id}`}>
+                        <img src={item.image} alt={item.name} />
+                      </Link>
                       <strong>${Math.round(item.price * item.qty)}</strong>
                       <div className="d-flex align-items-center">
                         <button

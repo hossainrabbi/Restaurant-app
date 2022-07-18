@@ -86,6 +86,7 @@ li {
 
 .btn {
   box-shadow: none !important;
+  user-select: none;
 }
 
 .stock__green {
@@ -94,6 +95,10 @@ li {
 
 .stock__red {
   color: var(--red-color);
+}
+
+.text-right {
+  text-align: right;
 }
 
 /* Testimonial Area Change default css in SwiperJS */

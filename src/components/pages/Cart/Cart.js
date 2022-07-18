@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row, Table } from 'react-bootstrap';
 import { FaTrash } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import { useMenuContext } from '../../../contexts/MenuContext';
 import Layout from '../../Layout';
 import styles from './Cart.module.css';
@@ -32,13 +33,18 @@ export default function Cart() {
     });
   };
 
-  console.log(cart);
+  const subTotal = cart.reduce(
+    (acc, curr) => acc + parseFloat(curr.price) * parseInt(curr.qty),
+    0
+  );
+
+  const shipping = cart.length * 2;
 
   return (
     <Layout>
-      <Row>
-        <Col md={7}>
-          {cart.length > 0 ? (
+      {cart.length > 0 ? (
+        <Row>
+          <Col md={7}>
             <Table bordered className={`${styles.table} mt-4`}>
               <thead>
                 <tr>
@@ -61,7 +67,9 @@ export default function Cart() {
                         alt={cartItem.name}
                       />
                     </td>
-                    <td>{cartItem.name}</td>
+                    <td>
+                      <Link to={`/menu/${cartItem.id}`}>{cartItem.name}</Link>
+                    </td>
                     <td
                       className={
                         cartItem.inStock - cartItem.qty > 0
@@ -113,12 +121,37 @@ export default function Cart() {
                 ))}
               </tbody>
             </Table>
-          ) : (
-            <div>Data Not Found</div>
-          )}
-        </Col>
-        <Col md={5}></Col>
-      </Row>
+          </Col>
+          <Col md={5}>
+            <Table bordered className="mt-4">
+              <thead>
+                <tr>
+                  <th>Text</th>
+                  <th className="text-right">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Sub Total:</th>
+                  <th className="text-right">${subTotal.toFixed(2)}</th>
+                </tr>
+                <tr>
+                  <th>Shipping:</th>
+                  <th className="text-right">${shipping}</th>
+                </tr>
+                <tr>
+                  <th>Total:</th>
+                  <th className="text-right">
+                    ${(subTotal + shipping).toFixed(2)}
+                  </th>
+                </tr>
+              </tbody>
+            </Table>
+          </Col>
+        </Row>
+      ) : (
+        <div className="text-center mt-4">Data Not Found</div>
+      )}
     </Layout>
   );
 }
