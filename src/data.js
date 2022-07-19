@@ -5,7 +5,7 @@ import DELIVERY from './images/delivery-truck.png';
 import MENU_1 from './images/menu/menu-1.jpg';
 import MENU_2 from './images/menu/menu-2.jpg';
 import MENU_3 from './images/menu/menu-3.jpg';
-import MENU_4 from './images/menu/menu-4.jpg';
+import MENU_4 from './images/menu/menu-4.jpeg';
 import MENU_5 from './images/menu/menu-5.jpg';
 import MENU_6 from './images/menu/menu-6.jpg';
 import TAP from './images/tap.png';
