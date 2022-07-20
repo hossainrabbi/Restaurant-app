@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff6d88e1.css",
+    "main.js": "/static/js/main.83e89ac4.js",
+    "static/media/menu-1.jpg": "/static/media/menu-1.03c6850f33cf553f792f.jpg",
+    "static/media/menu-3.jpg": "/static/media/menu-3.8a7b41e7c49c41e7c9f2.jpg",
+    "static/media/menu-2.jpg": "/static/media/menu-2.0ab5f6f9c1d8e0b220ca.jpg",
+    "static/media/chef.jpg": "/static/media/chef.c3843799db1d30bb247f.jpg",
+    "static/media/menu-5.jpg": "/static/media/menu-5.64c71dbccba9c6ffe57c.jpg",
+    "static/media/menu-6.jpg": "/static/media/menu-6.b0af5e6bf2a11bc52977.jpg",
+    "static/media/rohan.jpg": "/static/media/rohan.aa6cdd1144c74c03bae4.jpg",
+    "static/media/rakib.jpg": "/static/media/rakib.0b4553003ebee568869b.jpg",
+    "static/media/FOOD_LOGO.png": "/static/media/FOOD_LOGO.79cd4ba74330dd91916f.png",
+    "static/media/food-2.png": "/static/media/food-2.32bff377f8793e6e6240.png",
+    "static/media/food-1.png": "/static/media/food-1.61b88abb35944bf6b4a8.png",
+    "static/media/ashiq.jpg": "/static/media/ashiq.2ade14e0054b3c56ba17.jpg",
+    "static/media/menu-4.jpeg": "/static/media/menu-4.b7465d8e3c17b39fe2c4.jpeg",
+    "static/media/chicken-leg.png": "/static/media/chicken-leg.47112cea74bce96ddcf1.png",
+    "static/media/tap.png": "/static/media/tap.3dae278ed194d1131d18.png",
+    "index.html": "/index.html",
+    "main.ff6d88e1.css.map": "/static/css/main.ff6d88e1.css.map",
+    "main.83e89ac4.js.map": "/static/js/main.83e89ac4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff6d88e1.css",
+    "static/js/main.83e89ac4.js"
+  ]
+}
