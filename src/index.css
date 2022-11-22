@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 /* Custom Tag Styles */
 body {
   background-color: var(--white-light);
